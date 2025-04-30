@@ -1,5 +1,7 @@
 QDRANT DOCUMENTATION 
+
 comprehensive guide to setting up and using Qdrant in Python with Docker 
+
 Step 1: Install Docker Desktop on Windows 10
 [1]Download Docker Desktop:
 [2]Visit the Docker Desktop for Windows page.
