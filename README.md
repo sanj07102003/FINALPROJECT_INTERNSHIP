@@ -3,34 +3,55 @@ QDRANT DOCUMENTATION
 comprehensive guide to setting up and using Qdrant in Python with Docker 
 
 Step 1: Install Docker Desktop on Windows 10
+
 [1]Download Docker Desktop:
+
 [2]Visit the Docker Desktop for Windows page.
+
 [3]Click on "Download for Windows" to get the installer.
+
 [4]Install Docker Desktop:
+
 [5]Run the downloaded installer.
+
 [6]Follow the on-screen instructions to complete the installation.
+
 [7]Ensure that the option to use WSL 2 (Windows Subsystem for Linux) is selected during installation for optimal performance.
+
 [8]Start Docker Desktop:
+
 [9]Launch Docker Desktop from the Start menu.
+
 [10]Wait for Docker to initialize; the Docker icon in the system tray will indicate when it's ready.
 
 Verify Installation:
+
 Open PowerShell or Command Prompt.
+
 Run:
+
 docker --version
+
 You should see the Docker version information, confirming a successful installation.
 
 Step 2: Run Qdrant with Docker
+
 Pull the Qdrant Docker Image:
+
 In PowerShell or Command Prompt, execute:
 
 docker pull qdrant/qdrant
 
 Run the Qdrant Container:
+
 Choose a directory on your system to store Qdrant data, e.g., C:\qdrant\data.
+
 Run the container with:
+
 docker run -d --name qdrant -p 6333:6333 -v C:\qdrant\data:/qdrant/storage qdrant/qdrant
+
 NOTE:
+
 -d: Runs the container in detached mode.
 --name qdrant: Names the container "qdrant".
 -p 6333:6333: Maps port 6333 of the container to port 6333 on your host.
